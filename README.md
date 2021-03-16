@@ -48,6 +48,7 @@ npm run server
 | ------ | ------ | ----- |
 | errors | string | Строка, содержащая сообщение об ошибке
 | ref |  RefObject<T> | Ref будет установлен в поле input
+    
 Также можно добавлять любые параметры, доступные для тега <b>input</b> [MDN input](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input)
 
 ## SelectRow
@@ -71,6 +72,7 @@ const myOption = {
 | ------ | ------ | ----- |
 | options | any[] | Массив, содержащий свойства тегов option
 | ref |  RefObject<T> | Ref будет установлен в поле select
+    
 Также можно добавлять любые параметры, доступные для тега <b>select</b> [MDN select](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select)
 
 Поля объекта option:
@@ -78,6 +80,7 @@ const myOption = {
 | ------ | ------ | ----- |
 | value | string | Значение, которое увидит пользователь при выпадании тега
 | attributes |  any | Объект, содержащий атрибуты, доступные тегу option
+
 Пример:
 ```JavaScript
 const myOption = {
@@ -106,6 +109,7 @@ const myOption = {
 | ------ | ------ | ----- |
 | text | string | Строка, содержащая описание
 | ref |  RefObject<T> | Ref будет установлен в поле input
+    
 Также можно добавлять любые параметры, доступные для тега <b>input</b> [MDN input](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input)
 
 ## FormRow
