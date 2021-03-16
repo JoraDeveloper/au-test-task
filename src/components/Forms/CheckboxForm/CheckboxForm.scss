@@ -1,0 +1,51 @@
+.input-checkbox {
+  display: flex;
+  align-items: center;
+
+  &__form {
+    margin: 0 10px 0 0;
+  }
+
+  &__container {
+    display: block;
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    input {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+      height: 0;
+      width: 0;
+    }
+
+    input:checked ~ .input-checkbox__checkmark {
+      background: url("../../../assets/check-mark.svg") no-repeat center;
+      color: blue;
+      background-size: contain;
+    }
+  }
+
+  &__checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 1px solid #7E7E7E;
+    height: 12px;
+    width: 12px;
+    background-color: #ffffff;
+  }
+
+  &__description {
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+  }
+}

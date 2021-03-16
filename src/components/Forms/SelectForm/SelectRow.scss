@@ -1,0 +1,30 @@
+.select {
+  position: relative;
+  width: 100%;
+  &__form {
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+    width: 100%;
+    padding: 6px 12px;
+    appearance:none;
+    position: relative;
+    cursor: pointer;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    background: url('../../../assets/arrow-down.svg') no-repeat center;
+    background-size: contain;
+    right: 9px;
+    bottom: 11px;
+    pointer-events: none;
+  }
+
+  &__option {
+    width: 100%;
+  }
+}

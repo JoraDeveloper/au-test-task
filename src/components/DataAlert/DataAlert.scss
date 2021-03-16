@@ -1,0 +1,35 @@
+.data-alert {
+  max-width: max-content;
+  background: rgba(235, 255, 54, .8);
+  -webkit-border-top-left-radius: 10px;
+  -webkit-border-top-right-radius: 10px;
+  -moz-border-radius-topleft: 10px;
+  -moz-border-radius-topright: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding: 20px;
+  position: fixed;
+  right: 10px;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+
+
+
+  &__close-btn {
+    align-self: flex-end;
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__message {
+
+  }
+}

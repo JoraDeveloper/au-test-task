@@ -1,0 +1,44 @@
+.input-text {
+  width: 100%;
+
+
+  & > * {
+    width: 100%;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+    padding: 6px 12px;
+  }
+
+  input:focus {
+    outline: none;
+  }
+
+  &.error > input {
+    border: 1px solid #FF0000;
+  }
+
+  &.error > input:focus {
+    border: 1px solid #FF0000;
+    outline: none;
+  }
+
+  &.error + &__error {
+    visibility: visible;
+  }
+
+  &__error {
+    visibility: hidden;
+    font-size: 12px;
+    line-height: 20px;
+    color: #FF0000;
+    position: absolute;
+
+  }
+
+  &__password {
+  }
+
+  &__email {
+  }
+}
